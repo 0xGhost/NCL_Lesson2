@@ -4,6 +4,10 @@
 #include <iostream>
 #include <functional>
 
+int processEvents(std::function < int(int, int)> someEvent, int x, int y) {
+	return someEvent(x, y);
+}
+
 int main()
 {
 	
